@@ -13,6 +13,10 @@ Aqui, você encontrará exemplos práticos e bem explicados das tecnologias que 
 - **⚡ Vite**  
 - **🔷 TypeScript**
 
+## 📚 Bibliotecas Legais
+Utilizei nesse projeto uma biblioteca de icones chamada
+- **[Tabler Icons](https://tabler.io/docs/icons)**
+
 ## 🚀 Por que criei este projeto?
 
 ✨ Deixar claro os truques e macetes que uso no trabalho.  
