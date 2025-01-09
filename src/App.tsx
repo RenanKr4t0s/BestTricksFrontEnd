@@ -20,26 +20,28 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={`${dark&&"dark"} flex flex-col h-screen 1`} >
-        <Header state={dark} setState={setDark} />
-        <div className="flex-1 flex">
-          <Sidebar />
-          <div className="flex-1 bg-white dark:bg-zinc-800">
-          <Routes>
-            <Route path="/" element={<Hello />} />
-            {presentationList.map((item)=>{
-              return(
-                <Route path={item.path} element={
-                  <Presentation
-                   presentation = {item}
-                  />
-                }/>
-              )
-            })}
-          </Routes>
-            </div>
+      <div className={`${dark&&"dark"} flex flex-col h-screen`} >
+        <div className="bg-white dark:bg-zinc-900 h-screen flex flex-col flex-1 px-36">
+          <Header state={dark} setState={setDark} />
+          <div className="flex-1 flex">
+            <Sidebar />
+            <div className="flex-1 bg-white dark:bg-zinc-800">
+            <Routes>
+              <Route path="/" element={<Hello />} />
+              {presentationList.map((item)=>{
+                return(
+                  <Route path={item.path} element={
+                    <Presentation
+                    presentation = {item}
+                    />
+                  }/>
+                )
+              })}
+            </Routes>
+              </div>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </BrowserRouter>
   )

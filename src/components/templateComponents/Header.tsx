@@ -1,5 +1,5 @@
 import { BooleanState } from "../../interfaces/generalInterfaces"
-import { Icon12Hours, IconAnalyze, IconBabyBottle, IconBabyCarriage, IconBikeFilled, IconBikeOff, IconCodeCircle2Filled, IconMoodSmile, IconMotorbike, IconWoman } from "@tabler/icons-react"
+import { IconCodeCircle2Filled } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 
 
